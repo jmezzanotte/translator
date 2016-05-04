@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+		Written-by: John Mezzanotte
+		translate.html
+		12-3-2015
+	 -->
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Translator - John Mezzanotte</title>
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="css/translate.css" type="text/css">
+	<!-- custom font -->
+	<link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+	<!-- [if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/
+		html5.js"></script>
+	<!--[endif]-->
+</head>
+<body>
+	<div id="container">
+		<div><img id="logo" src="images/translate.png"></div>
+		<div id="translateFrom">
+			<select id="langFrom">
+				<option value="zh">Chinese</option>
+				<option value="cs">Czech</option>
+				<option value="da">Danish</option>
+				<option value="en">English</option>
+				<option value="fr">French</option>
+				<option value="it">Italian</option>
+				<option value="ja">Japanese</option>
+				<option value="ko">Korean</option>
+				<option value="es">Spanish</option>
+				<option value="ru">Russian</option>
+			</select>
+			<p id="choiceFrom"></p>
+			<textarea id="messageToSend" ></textarea>
+			<label for="size">Font Size</label><input type="range" min="10" max="50" id="size"/>
+			<p id="size-display"></p>
+			<p id="clear">Clear</p>
+		</div>
+		
+		<div id="translateTo">
+			<select id="langTo">
+				<option value="zh">Chinese</option>
+				<option value="cs">Czech</option>
+				<option value="da">Danish</option>
+				<option value="en">English</option>
+				<option value="fr">French</option>
+				<option value="it">Italian</option>
+				<option value="ja">Japanese</option>
+				<option value="ko">Korean</option>
+				<option value="es">Spanish</option>
+				<option value="ru">Russian</option>
+			</select>
+			<p id="choiceTo"></p>
+			<textarea id="translatedMessage" readonly></textarea>
+		</div>
+		<input type="button" value="How do you say it in " id="translate">
+		
+		<p id="output"></p>
+	
+	</div>
+	<p id="yandex">powered by Yandex</p>
+	
+	<!-- .fail of getJSON not working in other versions of jquery. Works in version 2.1.4 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script src="js/translate.js"></script>
+</body>
+</html>
