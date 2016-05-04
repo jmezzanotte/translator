@@ -48,31 +48,6 @@ $(function(){
 		}
 	});
 	
-		/*
-
-		// grab the text from the messageToSend textarea               
-		var message = $('#messageToSend').val().replace(/ /g, '+');
-		var translateFrom = $('#langFrom').val();
-		var translateTo = $('#langTo').val();
-		var apikey = 'trnsl.1.1.20151204T025720Z.8fa3835dfba83dd4.71b336d4000b4414c0a154701fbaafb193f238bb'	//
-			
-		var url = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=' + apikey + 
-			'&lang='+ translateFrom +'-' + translateTo +'&text=' + message + '&callback=?';
-		
-		$.getJSON(url)
-			.done(function(data){
-				$('#output').text('');
-				console.log(url);
-				$('#translatedMessage').text(data.text[0]);
-			})
-			.fail(function(data){
-				console.log(data);
-				$('#output').text('Error in translation.');
-			
-			});
-		
-	});
-	*/
 	// When the user changes the translate from selectbox, update their choice in the UI
 	$('#langFrom').change(function(){
 		
